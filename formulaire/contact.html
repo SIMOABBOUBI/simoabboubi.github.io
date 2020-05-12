@@ -26,18 +26,7 @@
     <!-- Script Javascript sous jQuery pour la validation du Formulaire  -->
     <script src="form-jquery-validation.js"></script>   
     <!-- CSS -->
-    <style>
-        .container{
-        margin-bottom: 5% ;
-        margin-left: 5% ;
-        margin-right: 5% ;
-        margin-top: 5% ;
-        }
-        h3{
-        text-align: center;
-        /*text-decoration: underline;*/
-        }
-    </style>
+    <link rel="stylesheet" href="css/contact.css">
 
 
 </head>
@@ -49,11 +38,9 @@
 	<div class="row">
 		<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 contact-details">
 			<div class="contact-info">
-			    <p class="contact-texte lang" key="contact-texte">
-                Si vous avez des missions ou des projets à me proposez ,
-                ou si vous souhaitez me contacter pour un devis n’hésitez pas à me contacter 
-                , je serais très heureux de vous répondre
-                dans les plus brefs délais.
+			    <p class="contact-texte lang" key="contact-texte" id="textcenter">
+                Si vous avez des missions ou des projets à me proposer
+                , je serais très heureux de vous répondre dans les plus brefs délais.
                 <Br>
                 Je suis également ouvert à toute opportunité de stage en développement Web et je suis disponible du 15 juin 2020 au 15 Septembre 2020
                 </p>
@@ -132,17 +119,24 @@
                                 <input type="email" class="form-control" id="email" placeholder="name@example.com">
                             </div>
                      </div>
+
+                     <div class="form-group row">
+                        <label for="message" class="col-sm-4">Message : </label>
+                        <div class="col-sm-8">
+                            <textarea name="message" class="form-control" id="message" placeholder="Votre message ici "></textarea>
+                        </div>
+                    </div>
         
         
         
                     <button type="submit" class="btn btn-primary" id="envoyer">
-                        Valider
+                        Envoyer 
                     </button>
         
         
                 </form>
                 
-                <!-- -->
+             
         
                 <div class="modal" tabindex="-1" role="dialog" id="myModal">
                     <div class="modal-dialog" role="document">
@@ -170,7 +164,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- -->
             </div>
         
         
